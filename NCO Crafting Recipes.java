@@ -1,22 +1,3 @@
-			if (!ore_dict_raw_material_recipes) {
-				blockCompress(NCBlocks.ingot_block, i, "block" + type, new ItemStack(NCItems.ingot, 1, i));
-			}
-			else {
-				for (ItemStack ingot : OreDictionary.getOres("ingot" + type)) {
-					blockCompress(NCBlocks.ingot_block, i, "block" + type, ingot);
-				}
-			}
-			
-			if (!ore_dict_raw_material_recipes) {
-				blockOpen(NCItems.ingot, i, "ingot" + type, new ItemStack(NCBlocks.ingot_block, 1, i));
-			}
-			else {
-				for (ItemStack block : OreDictionary.getOres("block" + type)) {
-					blockOpen(NCItems.ingot, i, "ingot" + type, block);
-				}
-			}
-		}
-		
 		blockOpen(NCItems.uranium, 10, "ingotUranium238", "blockUranium238");
 		blockOpen(NCItems.neptunium, 5, "ingotNeptunium237", "blockNeptunium237");
 		blockOpen(NCItems.plutonium, 15, "ingotPlutonium242", "blockPlutonium242");
