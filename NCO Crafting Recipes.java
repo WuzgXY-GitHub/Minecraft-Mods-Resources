@@ -314,33 +314,8 @@
 		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 2), new Object[] {"dustRedstone", "dustGlowstone"});
 		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 9), new Object[] {"dustObsidian", "dustObsidian", "dustObsidian", "dustObsidian", "dustEndstone"});
 		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 10), new Object[] {"dustGraphite", "dustManganese"});
-				
-		addShapedOreRecipe(new ItemStack(Items.COOKIE, 8), new Object[] {"FCF", 'F', "dustWheat", 'C', "dustCocoa"});
-		addShapelessOreRecipe(NCItems.smore, new Object[] {NCItems.graham_cracker, "ingotChocolate", "ingotMarshmallow", NCItems.graham_cracker});
-		addShapelessOreRecipe(NCItems.moresmore, new Object[] {NCItems.smore, "ingotChocolate", "ingotMarshmallow", NCItems.smore});
-		addShapelessOreRecipe(NCItems.foursmore, new Object[] {NCItems.moresmore, "ingotChocolate", "ingotMarshmallow", NCItems.moresmore});
-		
-		addShapedOreRecipe(NCItems.geiger_counter, new Object[] {"SFF", "CRR", "BFF", 'S', "ingotSteel", 'F', "ingotFerroboron", 'C', "ingotCopper", 'R', "dustRedstone", 'B', "bioplastic"});
-		addShapedOreRecipe(NCItems.radiation_badge, new Object[] {" C ", "SRS", " L ", 'C', "ingotCopper", 'S', "string", 'R', "dustRedstone", 'L', "ingotLead"});
-		
-		// addShapedOreRecipe(NCItems.radaway_slow, new Object[] {" D ", "DRD",
-		// " D ", 'R', NCItems.radaway, 'D', "dustRedstone"});
-		addShapedOreRecipe(NCItems.rad_x, new Object[] {"EPE", "PRP", "PBP", 'E', "dustEnergetic", 'P', "bioplastic", 'R', NCItems.radaway, 'B', Items.BLAZE_POWDER});
-		
-		addShapedOreRecipe(NCBlocks.radiation_scrubber, new Object[] {"PCP", "CEC", "PCP", 'P', "plateElite", 'E', "ingotExtreme", 'C', "dustBorax"});
-		
-		addShapedOreRecipe(NCBlocks.geiger_block, new Object[] {" P ", "PGP", " P ", 'P', "plateBasic", 'G', NCItems.geiger_counter});
-		
+	
 		addShapedOreRecipe(new ItemStack(NCItems.rad_shielding, 1, 0), new Object[] {"III", "CCC", "LLL", 'I', "ingotIron", 'C', "coal", 'L', "ingotLead"});
-		addShapedOreRecipe(new ItemStack(NCItems.rad_shielding, 1, 1), new Object[] {"BBB", "RFR", "PPP", 'B', "bioplastic", 'F', "ingotFerroboron", 'P', "plateBasic", 'R', new ItemStack(NCItems.rad_shielding, 1, 0)});
-		addShapedOreRecipe(new ItemStack(NCItems.rad_shielding, 1, 2), new Object[] {"BBB", "RHR", "PPP", 'B', "ingotBeryllium", 'H', "ingotHardCarbon", 'P', "plateDU", 'R', new ItemStack(NCItems.rad_shielding, 1, 1)});
-		
-		addShapedOreRecipe(new ItemStack(NCItems.multitool), new Object[] {" F ", "HSF", "SB ", 'F', "ingotFerroboron", 'H', "ingotHardCarbon", 'S', "ingotSteel", 'B', "ingotBronze"});
-		
-		addShapelessOreRecipe(NCItems.record_wanderer, new Object[] {"record", "ingotTough"});
-		addShapelessOreRecipe(NCItems.record_end_of_the_world, new Object[] {"record", "ingotUranium235"});
-		addShapelessOreRecipe(NCItems.record_money_for_nothing, new Object[] {"record", "ingotSilver"});
-		addShapelessOreRecipe(NCItems.record_hyperspace, new Object[] {"record", "dustDimensional"});
 		
 		addShapedOreRecipe(NCArmor.helm_hazmat, new Object[] {"YWY", "SLS", "BIB", 'Y', "dyeYellow", 'W', "wool", 'L', Items.LEATHER_HELMET, 'B', "bioplastic", 'I', "ingotSteel", 'S', new ItemStack(NCItems.rad_shielding, 1, 2)});
 		addShapedOreRecipe(NCArmor.chest_hazmat, new Object[] {"WSW", "YLY", "SWS", 'Y', "dyeYellow", 'W', "wool", 'L', Items.LEATHER_CHESTPLATE, 'S', new ItemStack(NCItems.rad_shielding, 1, 2)});
@@ -451,24 +426,6 @@
 	
 	public static void blockOpen(Item itemOut, int metaOut, String itemOutOreName, Object itemIn) {
 		addShapelessOreRecipe(OreDictHelper.getPrioritisedCraftingStack(new ItemStack(itemOut, 9, metaOut), itemOutOreName), new Object[] {itemIn});
-	}
-	
-	public static void tools(Object material, Item sword, Item pick, Item shovel, Item axe, Item hoe, Item spaxelhoe) {
-		addShapedOreRecipe(sword, new Object[] {"M", "M", "S", 'M', material, 'S', "stickWood"});
-		addShapedOreRecipe(pick, new Object[] {"MMM", " S ", " S ", 'M', material, 'S', "stickWood"});
-		addShapedOreRecipe(shovel, new Object[] {"M", "S", "S", 'M', material, 'S', "stickWood"});
-		addShapedOreRecipe(axe, new Object[] {"MM", "MS", " S", 'M', material, 'S', "stickWood"});
-		addShapedOreRecipe(axe, new Object[] {"MM", "SM", "S ", 'M', material, 'S', "stickWood"});
-		addShapedOreRecipe(hoe, new Object[] {"MM", " S", " S", 'M', material, 'S', "stickWood"});
-		addShapedOreRecipe(hoe, new Object[] {"MM", "S ", "S ", 'M', material, 'S', "stickWood"});
-		addShapedOreRecipe(spaxelhoe, new Object[] {"ASP", "HIW", " I ", 'A', axe, 'S', shovel, 'P', pick, 'H', hoe, 'W', sword, 'I', "ingotIron"});
-	}
-	
-	public static void armor(Object material, Item helm, Item chest, Item legs, Item boots) {
-		addShapedOreRecipe(helm, new Object[] {"MMM", "M M", 'M', material});
-		addShapedOreRecipe(chest, new Object[] {"M M", "MMM", "MMM", 'M', material});
-		addShapedOreRecipe(legs, new Object[] {"MMM", "M M", "M M", 'M', material});
-		addShapedOreRecipe(boots, new Object[] {"M M", "M M", 'M', material});
 	}
 	
 	private static final Object2IntMap<String> RECIPE_COUNT_MAP = new Object2IntOpenHashMap<>();
