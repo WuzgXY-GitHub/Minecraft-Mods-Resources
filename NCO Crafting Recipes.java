@@ -1,78 +1,29 @@
-		blockOpen(NCItems.uranium, 10, "ingotUranium238", "blockUranium238");
-		blockOpen(NCItems.neptunium, 5, "ingotNeptunium237", "blockNeptunium237");
-		blockOpen(NCItems.plutonium, 15, "ingotPlutonium242", "blockPlutonium242");
-		blockOpen(NCItems.americium, 10, "ingotAmericium243", "blockAmericium243");
-		blockOpen(NCItems.curium, 10, "ingotCurium246", "blockCurium246");
-		blockOpen(NCItems.berkelium, 0, "ingotBerkelium247", "blockBerkelium247");
-		blockOpen(NCItems.californium, 15, "ingotCalifornium252", "blockCalifornium252");
-		
-		if (register_processor[2]) {
-			addShapedOreRecipe(NCBlocks.alloy_furnace, new Object[] {"PRP", "BFB", "PSP", 'F', Blocks.FURNACE, 'P', "plateBasic", 'S', "solenoidCopper", 'R', "dustRedstone", 'B', Items.BRICK});
-		}
-		if (register_processor[3]) {
-			addShapedOreRecipe(NCBlocks.decay_hastener, new Object[] {"PGP", "ECE", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'S', "solenoidCopper", 'G', "dustGlowstone", 'E', Items.ENDER_PEARL});
-		}
-		if (register_processor[4]) {
-			addShapedOreRecipe(NCBlocks.fuel_reprocessor, new Object[] {"PBP", "TCT", "PAP", 'C', "chassis", 'P', "plateBasic", 'A', "actuator", 'T', "ingotTough", 'B', "ingotBoron"});
-		}
-		if (register_processor[5]) {
-			addShapedOreRecipe(NCBlocks.separator, new Object[] {"PMP", "RCR", "PMP", 'C', "chassis", 'P', "plateBasic", 'M', "motor", 'R', "dustRedstone"});
-		}
-		if (register_processor[6]) {
-			addShapedOreRecipe(NCBlocks.pressurizer, new Object[] {"PTP", "ACA", "PTP", 'C', "chassis", 'P', "plateAdvanced", 'T', "ingotTough", 'A', "actuator"});
-		}
-		if (register_processor[7]) {
-			addShapedOreRecipe(NCBlocks.salt_mixer, new Object[] {"PSP", "BCB", "PMP", 'C', "chassis", 'P', "plateBasic", 'B', Items.BUCKET, 'M', "motor", 'S', "ingotSteel"});
-		}
-		if (register_processor[8]) {
-			addShapedOreRecipe(NCBlocks.enricher, new Object[] {"PHP", "LCL", "PMP", 'C', "chassis", 'P', "plateAdvanced", 'L', "gemLapis", 'M', "motor", 'H', Blocks.HOPPER});
-		}
-		if (register_processor[9]) {
-			addShapedOreRecipe(NCBlocks.chemical_reactor, new Object[] {"PMP", "GCG", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'G', "dustGlowstone", 'M', "motor", 'S', "servo"});
-		}
-		if (register_processor[10]) {
-			addShapedOreRecipe(NCBlocks.electrolyzer, new Object[] {"PGP", "SCS", "PMP", 'C', "chassis", 'P', "plateAdvanced", 'S', "solenoidCopper", 'G', "ingotGraphite", 'M', "motor"});
-		}
-		if (register_processor[11]) {
-			addShapedOreRecipe(NCBlocks.assembler, new Object[] {"PHP", "ACA", "PMP", 'C', "chassis", 'P', "plateBasic", 'H', "ingotHardCarbon", 'A', "actuator", 'M', "motor"});
-		}
-		if (register_processor[12]) {
-			addShapedOreRecipe(NCBlocks.supercooler, new Object[] {"PDP", "HCH", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'D', "ingotMagnesiumDiboride", 'H', "ingotHardCarbon", 'S', "servo"});
-		}
-		if (register_processor[13]) {
-			addShapedOreRecipe(NCBlocks.ingot_former, new Object[] {"PHP", "FCF", "PTP", 'C', "chassis", 'P', "plateBasic", 'F', "ingotFerroboron", 'T', "ingotTough", 'H', Blocks.HOPPER});
-		}
-		if (register_processor[14]) {
-			addShapedOreRecipe(NCBlocks.melter, new Object[] {"PNP", "NCN", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'N', "ingotBrickNether", 'S', "servo"});
-		}
-		if (register_processor[15]) {
-			addShapedOreRecipe(NCBlocks.crystallizer, new Object[] {"PSP", "SCS", "PUP", 'C', "chassis", 'P', "plateAdvanced", 'S', "solenoidCopper", 'U', Items.CAULDRON});
-		}
-		if (register_processor[16]) {
-			addShapedOreRecipe(NCBlocks.infuser, new Object[] {"PBP", "GCG", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'G', "ingotGold", 'S', "servo", 'B', Items.BUCKET});
-		}
-		if (register_processor[17]) {
-			addShapedOreRecipe(NCBlocks.extractor, new Object[] {"PMP", "BCB", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'M', "ingotMagnesium", 'S', "servo", 'B', Items.BUCKET});
-		}
-		if (register_processor[18]) {
-			addShapedOreRecipe(NCBlocks.centrifuge, new Object[] {"PFP", "MCM", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'M', "motor", 'F', "ingotFerroboron", 'S', "servo"});
-		}
-		if (register_processor[19]) {
-			addShapedOreRecipe(NCBlocks.rock_crusher, new Object[] {"PMP", "ACA", "PTP", 'C', "chassis", 'P', "plateAdvanced", 'A', "actuator", 'T', "ingotTough", 'M', "motor"});
-		}
-		
-		addShapedOreRecipe(NCBlocks.rtg_uranium, new Object[] {"PGP", "GUG", "PGP", 'G', "ingotGraphite", 'P', "plateBasic", 'U', "blockUranium238"});
-		addShapedOreRecipe(NCBlocks.rtg_plutonium, new Object[] {"PGP", "GUG", "PGP", 'G', "ingotGraphite", 'P', "plateAdvanced", 'U', "ingotPlutonium238All"});
-		addShapedOreRecipe(NCBlocks.rtg_americium, new Object[] {"PGP", "GAG", "PGP", 'G', "ingotGraphite", 'P', "plateAdvanced", 'A', "ingotAmericium241All"});
-		addShapedOreRecipe(NCBlocks.rtg_californium, new Object[] {"PGP", "GCG", "PGP", 'G', "ingotGraphite", 'P', "plateAdvanced", 'C', "ingotCalifornium250All"});
+{
+	{
+		addShapedOreRecipe(NCBlocks.alloy_furnace, new Object[] {"PRP", "BFB", "PSP", 'F', Blocks.FURNACE, 'P', "plateBasic", 'S', "solenoidCopper", 'R', "dustRedstone", 'B', Items.BRICK});
+		addShapedOreRecipe(NCBlocks.decay_hastener, new Object[] {"PGP", "ECE", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'S', "solenoidCopper", 'G', "dustGlowstone", 'E', Items.ENDER_PEARL});
+		addShapedOreRecipe(NCBlocks.fuel_reprocessor, new Object[] {"PBP", "TCT", "PAP", 'C', "chassis", 'P', "plateBasic", 'A', "actuator", 'T', "ingotTough", 'B', "ingotBoron"});
+		addShapedOreRecipe(NCBlocks.separator, new Object[] {"PMP", "RCR", "PMP", 'C', "chassis", 'P', "plateBasic", 'M', "motor", 'R', "dustRedstone"});
+		addShapedOreRecipe(NCBlocks.pressurizer, new Object[] {"PTP", "ACA", "PTP", 'C', "chassis", 'P', "plateAdvanced", 'T', "ingotTough", 'A', "actuator"});
+		addShapedOreRecipe(NCBlocks.salt_mixer, new Object[] {"PSP", "BCB", "PMP", 'C', "chassis", 'P', "plateBasic", 'B', Items.BUCKET, 'M', "motor", 'S', "ingotSteel"});
+		addShapedOreRecipe(NCBlocks.enricher, new Object[] {"PHP", "LCL", "PMP", 'C', "chassis", 'P', "plateAdvanced", 'L', "gemLapis", 'M', "motor", 'H', Blocks.HOPPER});
+		addShapedOreRecipe(NCBlocks.chemical_reactor, new Object[] {"PMP", "GCG", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'G', "dustGlowstone", 'M', "motor", 'S', "servo"});
+		addShapedOreRecipe(NCBlocks.electrolyzer, new Object[] {"PGP", "SCS", "PMP", 'C', "chassis", 'P', "plateAdvanced", 'S', "solenoidCopper", 'G', "ingotGraphite", 'M', "motor"});
+		addShapedOreRecipe(NCBlocks.assembler, new Object[] {"PHP", "ACA", "PMP", 'C', "chassis", 'P', "plateBasic", 'H', "ingotHardCarbon", 'A', "actuator", 'M', "motor"});
+		addShapedOreRecipe(NCBlocks.supercooler, new Object[] {"PDP", "HCH", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'D', "ingotMagnesiumDiboride", 'H', "ingotHardCarbon", 'S', "servo"});
+		addShapedOreRecipe(NCBlocks.ingot_former, new Object[] {"PHP", "FCF", "PTP", 'C', "chassis", 'P', "plateBasic", 'F', "ingotFerroboron", 'T', "ingotTough", 'H', Blocks.HOPPER});
+		addShapedOreRecipe(NCBlocks.melter, new Object[] {"PNP", "NCN", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'N', "ingotBrickNether", 'S', "servo"});
+		addShapedOreRecipe(NCBlocks.crystallizer, new Object[] {"PSP", "SCS", "PUP", 'C', "chassis", 'P', "plateAdvanced", 'S', "solenoidCopper", 'U', Items.CAULDRON});
+		addShapedOreRecipe(NCBlocks.infuser, new Object[] {"PBP", "GCG", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'G', "ingotGold", 'S', "servo", 'B', Items.BUCKET});
+		addShapedOreRecipe(NCBlocks.extractor, new Object[] {"PMP", "BCB", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'M', "ingotMagnesium", 'S', "servo", 'B', Items.BUCKET});
+		addShapedOreRecipe(NCBlocks.centrifuge, new Object[] {"PFP", "MCM", "PSP", 'C', "chassis", 'P', "plateAdvanced", 'M', "motor", 'F', "ingotFerroboron", 'S', "servo"});
+		addShapedOreRecipe(NCBlocks.rock_crusher, new Object[] {"PMP", "ACA", "PTP", 'C', "chassis", 'P', "plateAdvanced", 'A', "actuator", 'T', "ingotTough", 'M', "motor"});
 		
 		addShapedOreRecipe(NCBlocks.solar_panel_basic, new Object[] {"GQG", "PLP", "CPC", 'G', "dustGraphite", 'Q', "dustQuartz", 'P', Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 'L', "gemLapis", 'C', "solenoidCopper"});
 		addShapedOreRecipe(NCBlocks.solar_panel_basic, new Object[] {"GQG", "PLP", "CPC", 'G', "dustGraphite", 'Q', "dustNetherQuartz", 'P', Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 'L', "gemLapis", 'C', "solenoidCopper"});
 		addShapedOreRecipe(NCBlocks.solar_panel_advanced, new Object[] {"PGP", "SSS", "PCP", 'S', NCBlocks.solar_panel_basic, 'G', "dustGraphite", 'P', "plateAdvanced", 'C', "solenoidCopper"});
 		addShapedOreRecipe(NCBlocks.solar_panel_du, new Object[] {"PGP", "SSS", "PMP", 'S', NCBlocks.solar_panel_advanced, 'G', "dustGraphite", 'P', "plateDU", 'M', "solenoidMagnesiumDiboride"});
 		addShapedOreRecipe(NCBlocks.solar_panel_elite, new Object[] {"PBP", "SSS", "PMP", 'S', NCBlocks.solar_panel_du, 'B', "gemBoronArsenide", 'P', "plateElite", 'M', "solenoidMagnesiumDiboride"});
-		
-		addShapedOreRecipe(NCBlocks.decay_generator, new Object[] {"LCL", "CRC", "LCL", 'C', "cobblestone", 'L', "ingotLead", 'R', "dustRedstone"});
 		
 		if (register_battery[0]) {
 			addShapedOreRecipe(NCBlocks.voltaic_pile_basic, new Object[] {"PSP", "SMS", "PSP", 'P', "plateBasic", 'S', "solenoidCopper", 'M', "blockMagnesium"});
@@ -337,7 +288,6 @@
 			}
 			
 			addShapedOreRecipe(new ItemStack(NCBlocks.quantum_computer_connector, 8), new Object[] {"ESE", "SPS", "ESE", 'E', "ingotExtreme", 'S', "ingotSteel", 'P', Items.ENDER_PEARL});
-			/* if (ModCheck.openComputersLoaded()) { addShapedOreRecipe(NCBlocks.quantum_computer_port, new Object[] {"EME", "CFC", "EPE", 'E', "ingotExtreme", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'P', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"}); } */
 		}
 	}
 	
