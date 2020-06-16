@@ -1,24 +1,5 @@
 {
 	{
-		if (register_battery[0]) {
-			addShapedOreRecipe(NCBlocks.voltaic_pile_basic, new Object[] {"PSP", "SMS", "PSP", 'P', "plateBasic", 'S', "solenoidCopper", 'M', "blockMagnesium"});
-			addShapedEnergyRecipe(NCBlocks.voltaic_pile_advanced, new Object[] {"PMP", "VVV", "PCP", 'V', NCBlocks.voltaic_pile_basic, 'P', "plateAdvanced", 'M', "ingotMagnesium", 'C', "ingotCopper"});
-			addShapedEnergyRecipe(NCBlocks.voltaic_pile_du, new Object[] {"PMP", "VVV", "PCP", 'V', NCBlocks.voltaic_pile_advanced, 'P', "plateDU", 'M', "ingotMagnesium", 'C', "ingotCopper"});
-			addShapedEnergyRecipe(NCBlocks.voltaic_pile_elite, new Object[] {"PMP", "VVV", "PCP", 'V', NCBlocks.voltaic_pile_du, 'P', "plateElite", 'M', "ingotMagnesium", 'C', "ingotCopper"});
-		}
-		
-		if (register_battery[1]) {
-			addShapedEnergyRecipe(NCBlocks.lithium_ion_battery_basic, new Object[] {"PCP", "CSC", "PCP", 'C', NCItems.lithium_ion_cell, 'P', "plateElite", 'S', "solenoidMagnesiumDiboride"});
-			addShapedEnergyRecipe(NCBlocks.lithium_ion_battery_advanced, new Object[] {"PDP", "LLL", "PSP", 'L', NCBlocks.lithium_ion_battery_basic, 'P', "plateAdvanced", 'D', "ingotLithiumManganeseDioxide", 'S', "solenoidMagnesiumDiboride"});
-			addShapedEnergyRecipe(NCBlocks.lithium_ion_battery_du, new Object[] {"PDP", "LLL", "PSP", 'L', NCBlocks.lithium_ion_battery_advanced, 'P', "plateDU", 'D', "ingotLithiumManganeseDioxide", 'S', "solenoidMagnesiumDiboride"});
-			addShapedEnergyRecipe(NCBlocks.lithium_ion_battery_elite, new Object[] {"PDP", "LLL", "PSP", 'L', NCBlocks.lithium_ion_battery_du, 'P', "plateElite", 'D', "ingotLithiumManganeseDioxide", 'S', "solenoidMagnesiumDiboride"});
-		}
-		
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_casing, 8), new Object[] {" P ", "PFP", " P ", 'P', "plateBasic", 'F', "steelFrame"});
-		addShapelessOreRecipe(NCBlocks.fission_casing, new Object[] {NCBlocks.fission_glass});
-		addShapelessOreRecipe(NCBlocks.fission_casing, new Object[] {NCBlocks.fission_conductor});
-		addShapelessOreRecipe(NCBlocks.fission_glass, new Object[] {NCBlocks.fission_casing, "blockGlass"});
-		addShapelessOreRecipe(NCBlocks.fission_conductor, new Object[] {NCBlocks.fission_casing});
 		addShapedOreRecipe(new ItemStack(NCBlocks.fission_monitor, 4), new Object[] {"PGP", "TFT", "PGP", 'P', "plateBasic", 'G', "dustGlowstone", 'T', "ingotTough", 'F', "steelFrame"});
 		addShapedOreRecipe(new ItemStack(NCBlocks.fission_power_port, 4), new Object[] {"PTP", "RFR", "PTP", 'P', "plateBasic", 'T', "ingotTough", 'R', "dustRedstone", 'F', "steelFrame"});
 		addShapedOreRecipe(new ItemStack(NCBlocks.fission_vent, 4), new Object[] {"PTP", "VFV", "PTP", 'P', "plateBasic", 'T', "ingotTough", 'V', "servo", 'F', "steelFrame"});
@@ -30,13 +11,6 @@
 		if (ModCheck.openComputersLoaded()) {
 			addShapedOreRecipe(NCBlocks.fission_computer_port, new Object[] {"PMP", "CFC", "PBP", 'P', "plateBasic", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'B', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"});
 		}
-		
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_reflector, 2, 0), new Object[] {"BGB", "GFG", "BGB", 'B', "ingotBeryllium", 'G', "ingotGraphite", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_reflector, 2, 1), new Object[] {"LSL", "SFS", "LSL", 'L', "ingotLead", 'S', "ingotSteel", 'F', "steelFrame"});
-		
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_irradiator_port, 4), new Object[] {"PHP", "ZFZ", "PHP", 'P', "plateBasic", 'H', Blocks.HOPPER, 'Z', "ingotZirconium", 'F', "steelFrame"});
-		
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_cell_port, 4), new Object[] {"PHP", "ZFZ", "PHP", 'P', "plateAdvanced", 'H', Blocks.HOPPER, 'Z', "ingotZircaloy", 'F', "steelFrame"});
 		
 		addShapedOreRecipe(new ItemStack(NCBlocks.fission_vessel_port, 4), new Object[] {"PSP", "ZFZ", "PSP", 'P', "plateElite", 'S', "servo", 'Z', "ingotZircaloy", 'F', "steelFrame"});
 		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 4, 0), new Object[] {"PSP", "TFT", "PSP", 'P', "plateElite", 'S', "servo", 'T', "ingotThermoconducting", 'F', "steelFrame"});
@@ -71,8 +45,6 @@
 		addShapelessFluidRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 13), new Object[] {new ItemStack(NCBlocks.fission_heater_port, 1, 0), new BucketIngredient("liquid_helium")});
 		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 14), new Object[] {" E ", "EPE", " E ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'E', "ingotEnderium"});
 		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 15), new Object[] {" C ", "CPC", " C ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'C', "dustCryotheum"});
-		
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_shield_manager, 4), new Object[] {"PTP", "RFR", "PTP", 'P', "plateBasic", 'T', "ingotTough", 'R', Items.REPEATER, 'F', "steelFrame"});
 		
 		addShapedOreRecipe(NCBlocks.solid_fission_controller, new Object[] {"PTP", "HFH", "PTP", 'P', "plateAdvanced", 'T', "ingotTough", 'H', "ingotHardCarbon", 'F', "steelFrame"});
 		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_cell, 4), new Object[] {"PTP", "ZFZ", "PTP", 'P', "plateAdvanced", 'T', "ingotTough", 'Z', "ingotZircaloy", 'F', "steelFrame"});
@@ -164,25 +136,6 @@
 		addShapelessOreRecipe(NCBlocks.condenser_tube_hard_carbon, new Object[] {NCBlocks.heat_exchanger_tube_hard_carbon});
 		addShapelessOreRecipe(NCBlocks.condenser_tube_thermoconducting, new Object[] {NCBlocks.heat_exchanger_tube_thermoconducting});
 		
-		addShapedOreRecipe(NCBlocks.turbine_controller, new Object[] {"STS", "TFT", "STS", 'S', "ingotHSLASteel", 'T', "ingotTough", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_casing, 8), new Object[] {" S ", "SFS", " S ", 'S', "ingotHSLASteel", 'F', "steelFrame"});
-		addShapelessOreRecipe(NCBlocks.turbine_casing, new Object[] {NCBlocks.turbine_glass});
-		addShapelessOreRecipe(NCBlocks.turbine_glass, new Object[] {NCBlocks.turbine_casing, "blockGlass"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_rotor_shaft, 4), new Object[] {"SSS", "TTT", "SSS", 'S', "ingotHSLASteel", 'T', "ingotTough"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_rotor_blade_steel, 4), new Object[] {"SHS", "SHS", "SHS", 'S', "ingotSteel", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_rotor_blade_extreme, 4), new Object[] {"EHE", "EHE", "EHE", 'E', "ingotExtreme", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_rotor_blade_sic_sic_cmc, 4), new Object[] {"SHS", "SHS", "SHS", 'S', "ingotSiCSiCCMC", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_rotor_stator, 4), new Object[] {"SS", "SS", "SS", 'S', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_rotor_bearing, 4), new Object[] {"SGS", "GFG", "SGS", 'G', "nuggetGold", 'S', "ingotHSLASteel", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_dynamo_coil, 2, 0), new Object[] {"MMM", "HTH", "MMM", 'M', "ingotMagnesium", 'T', "ingotTough", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_dynamo_coil, 2, 1), new Object[] {"BBB", "HTH", "BBB", 'B', "ingotBeryllium", 'T', "ingotTough", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_dynamo_coil, 2, 2), new Object[] {"AAA", "HTH", "AAA", 'A', "ingotAluminum", 'T', "ingotTough", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_dynamo_coil, 2, 3), new Object[] {"GGG", "HTH", "GGG", 'G', "ingotGold", 'T', "ingotTough", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_dynamo_coil, 2, 4), new Object[] {"CCC", "HTH", "CCC", 'C', "ingotCopper", 'T', "ingotTough", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_dynamo_coil, 2, 5), new Object[] {"SSS", "HTH", "SSS", 'S', "ingotSilver", 'T', "ingotTough", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_coil_connector, 4), new Object[] {"HHH", "HTH", "HHH", 'T', "ingotTough", 'H', "ingotHSLASteel"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_inlet, 4), new Object[] {"STS", "VFV", "STS", 'S', "ingotHSLASteel", 'T', "ingotTough", 'V', "servo", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.turbine_outlet, 4), new Object[] {"SSS", "VFV", "SSS", 'S', "ingotHSLASteel", 'V', "servo", 'F', "steelFrame"});
 		if (ModCheck.openComputersLoaded()) {
 			addShapedOreRecipe(NCBlocks.turbine_computer_port, new Object[] {"SMS", "CFC", "SPS", 'S', "ingotHSLASteel", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'P', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"});
 		}
@@ -199,15 +152,7 @@
 		fissionFuelRecipes("Berkelium", NCItems.pellet_berkelium, NCItems.fuel_berkelium, 247, 248);
 		fissionFuelRecipes("Californium", NCItems.pellet_californium, NCItems.fuel_californium, 252, 249, 251);
 		
-		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 1), new Object[] {"dustRhodochrosite", "dustCalciumSulfate", "dustObsidian", "dustMagnesium"});
-		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 2), new Object[] {"dustRedstone", "dustGlowstone"});
-		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 9), new Object[] {"dustObsidian", "dustObsidian", "dustObsidian", "dustObsidian", "dustEndstone"});
-		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 10), new Object[] {"dustGraphite", "dustManganese"});
-	
 		if (register_quantum) {
-			addShapedOreRecipe(NCBlocks.quantum_computer_controller, new Object[] {"EPE", "PFP", "EPE", 'E', "ingotExtreme", 'P', Items.ENDER_PEARL, 'F', "steelFrame"});
-			addShapedOreRecipe(NCBlocks.quantum_computer_qubit, new Object[] {"ESE", "PRP", "ESE", 'E', "ingotExtreme", 'S', "ingotSteel", 'P', Items.ENDER_PEARL, 'R', "blockRedstone"});
-			
 			addShapedOreRecipe(new ItemStack(NCBlocks.quantum_computer_gate_single, 1, 0), new Object[] {"SES", "ECE", "SES", 'E', "ingotExtreme", 'S', "ingotSteel", 'P', Items.ENDER_PEARL});
 			addShapedOreRecipe(new ItemStack(NCBlocks.quantum_computer_gate_single, 1, 1), new Object[] {"SES", "ECE", "ESE", 'E', "ingotExtreme", 'S', "ingotSteel", 'P', Items.ENDER_PEARL});
 			addShapedOreRecipe(new ItemStack(NCBlocks.quantum_computer_gate_single, 1, 2), new Object[] {"SSS", "ECE", "SSS", 'E', "ingotExtreme", 'S', "ingotSteel", 'P', Items.ENDER_PEARL});
@@ -242,8 +187,6 @@
 				addShapelessOreRecipe(new ItemStack(NCBlocks.quantum_computer_gate_single, 1, i), new Object[] {new ItemStack(NCBlocks.quantum_computer_gate_control, 1, i)});
 				addShapelessOreRecipe(new ItemStack(NCBlocks.quantum_computer_gate_control, 1, i), new Object[] {new ItemStack(NCBlocks.quantum_computer_gate_single, 1, i)});
 			}
-			
-			addShapedOreRecipe(new ItemStack(NCBlocks.quantum_computer_connector, 8), new Object[] {"ESE", "SPS", "ESE", 'E', "ingotExtreme", 'S', "ingotSteel", 'P', Items.ENDER_PEARL});
 		}
 	}
 	
