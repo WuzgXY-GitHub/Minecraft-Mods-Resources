@@ -6,9 +6,6 @@
 		blockOpen(NCItems.berkelium, 0, "ingotBerkelium247", "blockBerkelium247");
 		blockOpen(NCItems.californium, 15, "ingotCalifornium252", "blockCalifornium252");
 		
-		if (register_processor[1]) {
-			addShapedOreRecipe(NCBlocks.manufactory, new Object[] {"LRL", "FPF", "LSL", 'P', Blocks.PISTON, 'L', "ingotLead", 'S', "solenoidCopper", 'R', "dustRedstone", 'F', Items.FLINT});
-		}
 		if (register_processor[2]) {
 			addShapedOreRecipe(NCBlocks.alloy_furnace, new Object[] {"PRP", "BFB", "PSP", 'F', Blocks.FURNACE, 'P', "plateBasic", 'S', "solenoidCopper", 'R', "dustRedstone", 'B', Items.BRICK});
 		}
@@ -64,8 +61,6 @@
 			addShapedOreRecipe(NCBlocks.rock_crusher, new Object[] {"PMP", "ACA", "PTP", 'C', "chassis", 'P', "plateAdvanced", 'A', "actuator", 'T', "ingotTough", 'M', "motor"});
 		}
 		
-		addShapedOreRecipe(NCBlocks.machine_interface, new Object[] {" A ", "MCM", " S ", 'C', "chassis", 'A', "actuator", 'M', "motor", 'S', "servo"});
-		
 		addShapedOreRecipe(NCBlocks.rtg_uranium, new Object[] {"PGP", "GUG", "PGP", 'G', "ingotGraphite", 'P', "plateBasic", 'U', "blockUranium238"});
 		addShapedOreRecipe(NCBlocks.rtg_plutonium, new Object[] {"PGP", "GUG", "PGP", 'G', "ingotGraphite", 'P', "plateAdvanced", 'U', "ingotPlutonium238All"});
 		addShapedOreRecipe(NCBlocks.rtg_americium, new Object[] {"PGP", "GAG", "PGP", 'G', "ingotGraphite", 'P', "plateAdvanced", 'A', "ingotAmericium241All"});
@@ -86,15 +81,12 @@
 			addShapedEnergyRecipe(NCBlocks.voltaic_pile_elite, new Object[] {"PMP", "VVV", "PCP", 'V', NCBlocks.voltaic_pile_du, 'P', "plateElite", 'M', "ingotMagnesium", 'C', "ingotCopper"});
 		}
 		
-		addShapedOreRecipe(NCItems.lithium_ion_cell, new Object[] {"CCC", "FLF", "DDD", 'C', "ingotHardCarbon", 'F', "ingotFerroboron", 'L', "ingotLithium", 'D', "ingotLithiumManganeseDioxide"});
 		if (register_battery[1]) {
 			addShapedEnergyRecipe(NCBlocks.lithium_ion_battery_basic, new Object[] {"PCP", "CSC", "PCP", 'C', NCItems.lithium_ion_cell, 'P', "plateElite", 'S', "solenoidMagnesiumDiboride"});
 			addShapedEnergyRecipe(NCBlocks.lithium_ion_battery_advanced, new Object[] {"PDP", "LLL", "PSP", 'L', NCBlocks.lithium_ion_battery_basic, 'P', "plateAdvanced", 'D', "ingotLithiumManganeseDioxide", 'S', "solenoidMagnesiumDiboride"});
 			addShapedEnergyRecipe(NCBlocks.lithium_ion_battery_du, new Object[] {"PDP", "LLL", "PSP", 'L', NCBlocks.lithium_ion_battery_advanced, 'P', "plateDU", 'D', "ingotLithiumManganeseDioxide", 'S', "solenoidMagnesiumDiboride"});
 			addShapedEnergyRecipe(NCBlocks.lithium_ion_battery_elite, new Object[] {"PDP", "LLL", "PSP", 'L', NCBlocks.lithium_ion_battery_du, 'P', "plateElite", 'D', "ingotLithiumManganeseDioxide", 'S', "solenoidMagnesiumDiboride"});
 		}
-		
-		addShapedOreRecipe(NCBlocks.bin, new Object[] {"PZP", "Z Z", "PZP", 'P', "plateBasic", 'Z', "ingotSiliconCarbide"});
 		
 		if (register_passive[0]) {
 			addShapedFluidRecipe(NCBlocks.cobblestone_generator, new Object[] {"PIP", "L W", "PIP", 'I', "ingotTin", 'P', "plateBasic", 'L', new BucketIngredient("lava"), 'W', new BucketIngredient("water")});
@@ -287,16 +279,6 @@
 		if (ModCheck.openComputersLoaded()) {
 			addShapedOreRecipe(NCBlocks.turbine_computer_port, new Object[] {"SMS", "CFC", "SPS", 'S', "ingotHSLASteel", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'P', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"});
 		}
-				
-		tools("ingotBoron", NCTools.sword_boron, NCTools.pickaxe_boron, NCTools.shovel_boron, NCTools.axe_boron, NCTools.hoe_boron, NCTools.spaxelhoe_boron);
-		tools("ingotTough", NCTools.sword_tough, NCTools.pickaxe_tough, NCTools.shovel_tough, NCTools.axe_tough, NCTools.hoe_tough, NCTools.spaxelhoe_tough);
-		tools("ingotHardCarbon", NCTools.sword_hard_carbon, NCTools.pickaxe_hard_carbon, NCTools.shovel_hard_carbon, NCTools.axe_hard_carbon, NCTools.hoe_hard_carbon, NCTools.spaxelhoe_hard_carbon);
-		tools("gemBoronNitride", NCTools.sword_boron_nitride, NCTools.pickaxe_boron_nitride, NCTools.shovel_boron_nitride, NCTools.axe_boron_nitride, NCTools.hoe_boron_nitride, NCTools.spaxelhoe_boron_nitride);
-		
-		armor("ingotBoron", NCArmor.helm_boron, NCArmor.chest_boron, NCArmor.legs_boron, NCArmor.boots_boron);
-		armor("ingotTough", NCArmor.helm_tough, NCArmor.chest_tough, NCArmor.legs_tough, NCArmor.boots_tough);
-		armor("ingotHardCarbon", NCArmor.helm_hard_carbon, NCArmor.chest_hard_carbon, NCArmor.legs_hard_carbon, NCArmor.boots_hard_carbon);
-		armor("gemBoronNitride", NCArmor.helm_boron_nitride, NCArmor.chest_boron_nitride, NCArmor.legs_boron_nitride, NCArmor.boots_boron_nitride);
 		
 		fissionFuelRecipes("Uranium", NCItems.pellet_uranium, NCItems.fuel_uranium, 238, 233, 235);
 		fissionFuelRecipes("Neptunium", NCItems.pellet_neptunium, NCItems.fuel_neptunium, 237, 236);
@@ -315,13 +297,6 @@
 		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 9), new Object[] {"dustObsidian", "dustObsidian", "dustObsidian", "dustObsidian", "dustEndstone"});
 		addShapelessOreRecipe(new ItemStack(NCItems.compound, 2, 10), new Object[] {"dustGraphite", "dustManganese"});
 	
-		addShapedOreRecipe(new ItemStack(NCItems.rad_shielding, 1, 0), new Object[] {"III", "CCC", "LLL", 'I', "ingotIron", 'C', "coal", 'L', "ingotLead"});
-		
-		addShapedOreRecipe(NCArmor.helm_hazmat, new Object[] {"YWY", "SLS", "BIB", 'Y', "dyeYellow", 'W', "wool", 'L', Items.LEATHER_HELMET, 'B', "bioplastic", 'I', "ingotSteel", 'S', new ItemStack(NCItems.rad_shielding, 1, 2)});
-		addShapedOreRecipe(NCArmor.chest_hazmat, new Object[] {"WSW", "YLY", "SWS", 'Y', "dyeYellow", 'W', "wool", 'L', Items.LEATHER_CHESTPLATE, 'S', new ItemStack(NCItems.rad_shielding, 1, 2)});
-		addShapedOreRecipe(NCArmor.legs_hazmat, new Object[] {"YBY", "SLS", "W W", 'Y', "dyeYellow", 'W', "wool", 'L', Items.LEATHER_LEGGINGS, 'B', "bioplastic", 'S', new ItemStack(NCItems.rad_shielding, 1, 2)});
-		addShapedOreRecipe(NCArmor.boots_hazmat, new Object[] {"SDS", "BLB", 'D', "dyeBlack", 'L', Items.LEATHER_BOOTS, 'B', "bioplastic", 'S', new ItemStack(NCItems.rad_shielding, 1, 2)});
-		
 		if (register_quantum) {
 			addShapedOreRecipe(NCBlocks.quantum_computer_controller, new Object[] {"EPE", "PFP", "EPE", 'E', "ingotExtreme", 'P', Items.ENDER_PEARL, 'F', "steelFrame"});
 			addShapedOreRecipe(NCBlocks.quantum_computer_qubit, new Object[] {"ESE", "PRP", "ESE", 'E', "ingotExtreme", 'S', "ingotSteel", 'P', Items.ENDER_PEARL, 'R', "blockRedstone"});
