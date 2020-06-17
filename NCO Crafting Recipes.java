@@ -1,85 +1,11 @@
 {
 	{
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_monitor, 4), new Object[] {"PGP", "TFT", "PGP", 'P', "plateBasic", 'G', "dustGlowstone", 'T', "ingotTough", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_power_port, 4), new Object[] {"PTP", "RFR", "PTP", 'P', "plateBasic", 'T', "ingotTough", 'R', "dustRedstone", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_vent, 4), new Object[] {"PTP", "VFV", "PTP", 'P', "plateBasic", 'T', "ingotTough", 'V', "servo", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_irradiator, 4), new Object[] {"PZP", "AFA", "PZP", 'P', "plateBasic", 'Z', "ingotZirconium", 'A', "ingotZircaloy", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_source, 2, 0), new Object[] {"PRP", "BFB", "PRP", 'P', "plateBasic", 'R', "dustRadium", 'B', "dustBeryllium", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_source, 2, 1), new Object[] {"PLP", "BFB", "PLP", 'P', "plateBasic", 'L', "dustPolonium", 'B', "dustBeryllium", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_source, 2, 2), new Object[] {"PCP", "CFC", "PCP", 'P', "plateBasic", 'C', "ingotCalifornium252All", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_shield, 4, 0), new Object[] {"PBP", "IFI", "PBP", 'P', "plateBasic", 'B', "ingotBoron", 'I', "ingotSilver", 'F', "steelFrame"});
-		if (ModCheck.openComputersLoaded()) {
-			addShapedOreRecipe(NCBlocks.fission_computer_port, new Object[] {"PMP", "CFC", "PBP", 'P', "plateBasic", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'B', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"});
-		}
-		
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_vessel_port, 4), new Object[] {"PSP", "ZFZ", "PSP", 'P', "plateElite", 'S', "servo", 'Z', "ingotZircaloy", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 4, 0), new Object[] {"PSP", "TFT", "PSP", 'P', "plateElite", 'S', "servo", 'T', "ingotThermoconducting", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 1), new Object[] {" I ", "IPI", " I ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'I', "ingotIron"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 2), new Object[] {"RRR", "RPR", "RRR", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'R', "dustRedstone"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 3), new Object[] {"QQQ", "QPQ", "QQQ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'Q', "gemQuartz"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 4), new Object[] {"DOD", "OPO", "DOD", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'O', "obsidian", 'D', "dustObsidian"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 5), new Object[] {"INI", "NPN", "INI", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'N', Blocks.NETHER_BRICK, 'I', "ingotBrickNether"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 6), new Object[] {"GGG", "GPG", "GGG", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'G', "dustGlowstone"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 7), new Object[] {"LLL", "LPL", "LLL", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'L', "gemLapis"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 8), new Object[] {" G ", "GPG", " G ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'G', "ingotGold"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 9), new Object[] {" R ", "RPR", " R ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'R', "gemPrismarine"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 10), new Object[] {"BBB", "BPB", "BBB", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'B', "slimeball"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 11), new Object[] {"DED", "EPE", "DED", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'E', "endstone", 'D', "dustEndstone"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 12), new Object[] {"CBC", "BPB", "CBC", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'B', Blocks.PURPUR_BLOCK, 'C', Items.CHORUS_FRUIT_POPPED});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 13), new Object[] {" D ", "DPD", " D ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'D', "gemDiamond"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 14), new Object[] {" E ", "EPE", " E ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'E', "gemEmerald"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port, 1, 15), new Object[] {" C ", "CPC", " C ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'C', "ingotCopper"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 0), new Object[] {" T ", "TPT", " T ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'T', "ingotTin"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 1), new Object[] {" L ", "LPL", " L ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'L', "ingotLead"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 2), new Object[] {" B ", "BPB", " B ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'B', "ingotBoron"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 3), new Object[] {" L ", "LPL", " L ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'L', "ingotLithium"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 4), new Object[] {" M ", "MPM", " M ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'M', "ingotMagnesium"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 5), new Object[] {" M ", "MPM", " M ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'M', "ingotManganese"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 6), new Object[] {" A ", "APA", " A ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'A', "ingotAluminum"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 7), new Object[] {" I ", "IPI", " I ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'I', "ingotSilver"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 8), new Object[] {"FFF", "FPF", "FFF", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'F', "gemFluorite"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 9), new Object[] {"VVV", "VPV", "VVV", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'V', "gemVilliaumite"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 10), new Object[] {"CCC", "CPC", "CCC", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'C', "gemCarobbiite"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 11), new Object[] {"AAA", "APA", "AAA", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'A', "dustArsenic"});
 		addShapelessFluidRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 12), new Object[] {new ItemStack(NCBlocks.fission_heater_port, 1, 0), new BucketIngredient("liquid_nitrogen")});
 		addShapelessFluidRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 13), new Object[] {new ItemStack(NCBlocks.fission_heater_port, 1, 0), new BucketIngredient("liquid_helium")});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 14), new Object[] {" E ", "EPE", " E ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'E', "ingotEnderium"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.fission_heater_port2, 1, 15), new Object[] {" C ", "CPC", " C ", 'P', new ItemStack(NCBlocks.fission_heater_port, 1, 0), 'C', "dustCryotheum"});
 		
-		addShapedOreRecipe(NCBlocks.solid_fission_controller, new Object[] {"PTP", "HFH", "PTP", 'P', "plateAdvanced", 'T', "ingotTough", 'H', "ingotHardCarbon", 'F', "steelFrame"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_cell, 4), new Object[] {"PTP", "ZFZ", "PTP", 'P', "plateAdvanced", 'T', "ingotTough", 'Z', "ingotZircaloy", 'F', "steelFrame"});
 		addShapelessFluidRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 0), new Object[] {"emptyHeatSink", new BucketIngredient("water")});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 1), new Object[] {" I ", "ISI", " I ", 'S', "emptyHeatSink", 'I', "ingotIron"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 2), new Object[] {"RRR", "RSR", "RRR", 'S', "emptyHeatSink", 'R', "dustRedstone"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 3), new Object[] {"QQQ", "QSQ", "QQQ", 'S', "emptyHeatSink", 'Q', "gemQuartz"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 4), new Object[] {"DOD", "OSO", "DOD", 'S', "emptyHeatSink", 'O', "obsidian", 'D', "dustObsidian"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 5), new Object[] {"INI", "NSN", "INI", 'S', "emptyHeatSink", 'N', Blocks.NETHER_BRICK, 'I', "ingotBrickNether"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 6), new Object[] {"GGG", "GSG", "GGG", 'S', "emptyHeatSink", 'G', "dustGlowstone"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 7), new Object[] {"LLL", "LSL", "LLL", 'S', "emptyHeatSink", 'L', "gemLapis"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 8), new Object[] {" G ", "GSG", " G ", 'S', "emptyHeatSink", 'G', "ingotGold"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 9), new Object[] {" P ", "PSP", " P ", 'S', "emptyHeatSink", 'P', "gemPrismarine"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 10), new Object[] {"BBB", "BSB", "BBB", 'S', "emptyHeatSink", 'B', "slimeball"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 11), new Object[] {"DED", "ESE", "DED", 'S', "emptyHeatSink", 'E', "endstone", 'D', "dustEndstone"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 12), new Object[] {"CPC", "PSP", "CPC", 'S', "emptyHeatSink", 'P', Blocks.PURPUR_BLOCK, 'C', Items.CHORUS_FRUIT_POPPED});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 13), new Object[] {" D ", "DSD", " D ", 'S', "emptyHeatSink", 'D', "gemDiamond"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 14), new Object[] {" E ", "ESE", " E ", 'S', "emptyHeatSink", 'E', "gemEmerald"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink, 1, 15), new Object[] {" C ", "CSC", " C ", 'S', "emptyHeatSink", 'C', "ingotCopper"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 0), new Object[] {" T ", "TST", " T ", 'S', "emptyHeatSink", 'T', "ingotTin"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 1), new Object[] {" L ", "LSL", " L ", 'S', "emptyHeatSink", 'L', "ingotLead"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 2), new Object[] {" B ", "BSB", " B ", 'S', "emptyHeatSink", 'B', "ingotBoron"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 3), new Object[] {" L ", "LSL", " L ", 'S', "emptyHeatSink", 'L', "ingotLithium"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 4), new Object[] {" M ", "MSM", " M ", 'S', "emptyHeatSink", 'M', "ingotMagnesium"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 5), new Object[] {" M ", "MSM", " M ", 'S', "emptyHeatSink", 'M', "ingotManganese"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 6), new Object[] {" A ", "ASA", " A ", 'S', "emptyHeatSink", 'A', "ingotAluminum"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 7), new Object[] {" I ", "ISI", " I ", 'S', "emptyHeatSink", 'I', "ingotSilver"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 8), new Object[] {"FFF", "FSF", "FFF", 'S', "emptyHeatSink", 'F', "gemFluorite"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 9), new Object[] {"VVV", "VSV", "VVV", 'S', "emptyHeatSink", 'V', "gemVilliaumite"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 10), new Object[] {"CCC", "CSC", "CCC", 'S', "emptyHeatSink", 'C', "gemCarobbiite"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 11), new Object[] {"AAA", "ASA", "AAA", 'S', "emptyHeatSink", 'A', "dustArsenic"});
 		addShapelessFluidRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 12), new Object[] {"emptyHeatSink", new BucketIngredient("liquid_nitrogen")});
 		addShapelessFluidRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 13), new Object[] {"emptyHeatSink", new BucketIngredient("liquid_helium")});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 14), new Object[] {" E ", "ESE", " E ", 'S', "emptyHeatSink", 'E', "ingotEnderium"});
-		addShapedOreRecipe(new ItemStack(NCBlocks.solid_fission_sink2, 1, 15), new Object[] {" C ", "CSC", " C ", 'S', "emptyHeatSink", 'C', "dustCryotheum"});
 		
 		addShapedOreRecipe(NCBlocks.salt_fission_controller, new Object[] {"PEP", "HFH", "PEP", 'P', "plateElite", 'E', "ingotExtreme", 'H', "ingotHardCarbon", 'F', "steelFrame"});
 		addShapedOreRecipe(new ItemStack(NCBlocks.salt_fission_vessel, 4), new Object[] {"PEP", "ZFZ", "PEP", 'P', "plateElite", 'E', "ingotExtreme", 'Z', "ingotZircaloy", 'F', "steelFrame"});
@@ -129,16 +55,14 @@
 		addShapelessOreRecipe(NCBlocks.heat_exchanger_tube_thermoconducting, new Object[] {NCBlocks.condenser_tube_thermoconducting});
 		if (ModCheck.openComputersLoaded()) {
 			addShapedOreRecipe(NCBlocks.heat_exchanger_computer_port, new Object[] {"SMS", "CFC", "SPS", 'S', "stone", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'P', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"});
+			addShapedOreRecipe(NCBlocks.fission_computer_port, new Object[] {"PMP", "CFC", "PBP", 'P', "plateBasic", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'B', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"});
+			addShapedOreRecipe(NCBlocks.turbine_computer_port, new Object[] {"SMS", "CFC", "SPS", 'S', "ingotHSLASteel", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'P', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"});
 		}
-		
+			
 		addShapedOreRecipe(NCBlocks.condenser_controller, new Object[] {"STS", "CFC", "STS", 'S', "stone", 'T', "ingotTough", 'C', "ingotThermoconducting", 'F', "steelFrame"});
 		addShapelessOreRecipe(NCBlocks.condenser_tube_copper, new Object[] {NCBlocks.heat_exchanger_tube_copper});
 		addShapelessOreRecipe(NCBlocks.condenser_tube_hard_carbon, new Object[] {NCBlocks.heat_exchanger_tube_hard_carbon});
 		addShapelessOreRecipe(NCBlocks.condenser_tube_thermoconducting, new Object[] {NCBlocks.heat_exchanger_tube_thermoconducting});
-		
-		if (ModCheck.openComputersLoaded()) {
-			addShapedOreRecipe(NCBlocks.turbine_computer_port, new Object[] {"SMS", "CFC", "SPS", 'S', "ingotHSLASteel", 'M', RegistryHelper.itemStackFromRegistry("opencomputers:material:7"), 'C', RegistryHelper.blockStackFromRegistry("opencomputers:cable:0"), 'P', RegistryHelper.itemStackFromRegistry("opencomputers:material:4"), 'F', "steelFrame"});
-		}
 		
 		fissionFuelRecipes("Uranium", NCItems.pellet_uranium, NCItems.fuel_uranium, 238, 233, 235);
 		fissionFuelRecipes("Neptunium", NCItems.pellet_neptunium, NCItems.fuel_neptunium, 237, 236);
