@@ -42,7 +42,6 @@
 		addShapedOreRecipe(new ItemStack(NCBlocks.salt_fission_heater2, 1, 15), new Object[] {" C ", "CHC", " C ", 'H', new ItemStack(NCBlocks.salt_fission_heater, 1, 0), 'C', "dustCryotheum"});
 		
 		addShapedOreRecipe(new ItemStack(NCBlocks.heat_exchanger_casing, 8), new Object[] {" S ", "SFS", " S ", 'S', "stone", 'F', "steelFrame"});
-		addShapelessOreRecipe(NCBlocks.heat_exchanger_casing, new Object[] {NCBlocks.heat_exchanger_glass});
 		addShapelessOreRecipe(NCBlocks.heat_exchanger_glass, new Object[] {NCBlocks.heat_exchanger_casing, "blockGlass"});
 		addShapedOreRecipe(new ItemStack(NCBlocks.heat_exchanger_vent, 4), new Object[] {"SIS", "VFV", "SIS", 'S', "stone", 'I', "ingotSteel", 'V', "servo", 'F', "steelFrame"});
 		addShapedOreRecipe(new ItemStack(NCBlocks.heat_exchanger_tube_copper, 4), new Object[] {"SCS", "CFC", "SVS", 'S', "stone", 'C', "ingotCopper", 'F', "steelFrame", 'V', "servo"});
